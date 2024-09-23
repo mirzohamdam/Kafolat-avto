@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kafolat avto servis</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" href="/images/automotive.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <!-- jQuery kutubxonasi -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <!-- jQuery UI kutubxonasi -->
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    <!-- Font Awesome CDN -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body onload="loadComments()">
+    <header class="header">
+        <nav class="container">
+            <div data-aos="zoom-out-down"   class="header-top">
+                <div>
+                    <a href="/index.html">
+                        <img src="/images/automotive.png" alt="logo">
+                    </a>
+                    <a class="logo" href="index.html">kafolat avto servis</a>
+                </div>
+                    <!-- Qidiruv Tugmasi -->
+                    <!-- <button id="open-popup-btn">Qidiruv</button> -->
+
+                <div id="open-popup-btn" class="search">
+                     <!-- Qidiruv input maydoni  -->
+                <form >
+                    <input type="search" id="searchInput" placeholder="Qidiruv so'zini kiriting">
+                </form>
+                <button class="search" id="searchButton" disabled onclick="search()"><img src="/images/search-interface-symbol.png" alt=""></button>
+                     <!-- Natijalarni chiqarish uchun joy                  -->
+                    <div id="results"></div>   
+                </div>
+                <div>
+                    <ul class="header-right">
+                        <li class="header-right-mini">
+                            <a href="https://t.me/mirzohamdam" target="_blank">
+                                <img src="/images/telegram (1).png" alt="">
+                            </a>
+                        </li>
+                        <li class="header-right-mini">
+                            <a target="_blank" href="https://www.instagram.com/">
+                                <img src="/images/instagram.png" alt="">
+                            </a>
+                        </li>
+                        <li class="header-right-mini">
+                            <a href="https://www.facebook.com/" target="_blank">
+                                <img class="face-div" src="/images/facebook.png" alt="icon">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div data-aos="fade-down" class="header-bottom">
+                    <ul>
+                        <li>
+                            <a href="#about">biz haqimizda</a>
+                        </li>
+                        <li>
+                            <a href="#bonuses">bonuslar</a>
+                        </li>
+                        <li>
+                            <a href="#products">maxsulotlar</a>
+                        </li>
+                        <li>
+                            <a href="#position">joylashuvimiz</a>
+                        </li>
+                    </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="hero" class="hero">
+            <div class="container">
+                <h5 data-aos="zoom-out-down">Eng Yaxshi Avtomexanik</h5>
+                <h1 data-aos="zoom-out-down">Eng Yaxshi Avtomobil Xizmatlari</h1>
+                <p data-aos="zoom-in-down" class="reklama">Yuqori Sifatli Avtomobil Qismlari</p>   
+            </div>
+            <div class="right-hero">
+                <div>
+                    <img data-aos="zoom-in-up" class="moy1" src="/images/vecteezy_motor-oil-bottle-clipart-design-illustration_9381185.png" alt="">
+                    <img data-aos="zoom-in-up" class="img1" src="/images/isometric-cubic.png" alt="">
+                    <img data-aos="zoom-in-up" class="side-left" src="/images/side-left.png" alt="">
+                </div>
+                <div>
+                    <img data-aos="zoom-in-up" class="moy2" src="/images/vecteezy_motor-oil-bottle-clipart-design-illustration_9381185.png" alt="">
+                    <img data-aos="zoom-in-right" class="img2" src="/images/isometric-cubic.png" alt="">
+                </div>
+                <div>
+                    <img data-aos="zoom-in-up" class="moy3" src="/images/vecteezy_motor-oil-bottle-clipart-design-illustration_9381185.png" alt="">
+                    <img data-aos="zoom-in-left" class="img3" src="/images/isometric-cubic.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section id="bonuses" class="bonuses">
+            <div class="container">
+                <h1 data-aos="fade-up"
+                    data-aos-anchor-placement="center-bottom">BONUSLAR</h1>
+                <div class=" cards">
+                    <div data-aos="fade-right">
+                            <div class="motor-wash">
+                                <img class="carchir" src="/images/pressure-washer.png" alt="">
+                            <div>
+                                <h2>Motor Yuvish</h2>
+                                <p>Dvigatel tozalash xizmatlarimiz uchun maxsus taklif! Transport vositangizni bizning xizmatlarimiz bilan yangi holatiga qaytaring. Aktsiyamizdan foydalaning va qo'shimcha xarajatlarsiz bonus xizmatlardan bahramand bo'ling.</p>
+                            </div>    
+                        </div>
+                    </div>
+                    <div data-aos="fade-left" >
+                        <div class="dry-fog" >
+                            <div class="dry-fog-top">
+                                <img src="/images/smoke-machine (1).png" alt="">
+                            </div>
+                            <div class="dry-fog-bottom">
+                                <h2>Quruq Tuman</h2>
+                                <p>Quruq tuman xizmatlarimiz uchun maxsus taklif! Transport vositangizning hidi yangilansin. Aktsiyamizdan foydalaning va qo'shimcha xarajatlarsiz bonus xizmatlardan bahramand bo'ling</p>
+                            </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about" class="about">
+            <div class="container">
+                <h1 data-aos="zoom-in">Biz haqimizda</h1>
+                <div data-aos="fade-up-right">
+                    <p class="left-about"><span>Bizning avtoservisimiz</span> – sifatli avtomobil xizmatlari ko‘rsatishda ishonchli manzilingiz. Yillar davomida orttirilgan tajribamiz va malakali mutaxassislar jamoasi bilan mijozlarimizning ishonchini qozonib keldik. Biz har xil turdagi texnik xizmatlardan tortib, avtomobil ta'mirlash va diagnostika xizmatlarigacha keng ko‘lamdagi xizmatlarni taqdim etamiz.</p>
+                </div>
+                <div data-aos="fade-up-right">
+                    <p class="right-about">Har bir mijozimiz uchun alohida yondashuv qo‘llaymiz va avtomobilingizga yuqori darajadagi g‘amxo‘rlik bilan qaraymiz. Biz uchun muhim bo‘lgan narsa – mijozlarimizning xavfsizligi va ularning avtomobillari doim ishonchli holatda bo‘lishini ta’minlashdir.</p>
+                </div>
+                <h4 data-aos="zoom-in">Biz bilan birga avtomobilingiz doim soz va yo‘lga tayyor bo‘ladi!</h4>
+            </div>
+        </section>
+        <section id="products" class="products">
+            <div class="container">
+                <h1 data-aos="fade-up"
+                    data-aos-anchor-placement="center-bottom">Biz Sotadigan Mahsulotlar</h1>
+                <div class="karusel">
+                    <div class="carousel">
+    <!-- Karusel slaydlari -->
+                <div class="slides">
+        <div  data-modal="modal1" class="card">
+            <div>
+                 <div>
+                     <div class="oil">  
+                         <img class="bottle" src="/images/9952_462e-removebg-preview.png" alt="">
+                     </div>
+                 </div>
+                 <div class="paragrph">
+                     <h4>Liqui Moly</h4>
+                     <p>Molygen New Generation 5W-30 5l</p>
+                     <button>Qo‘shimcha Ma’lumot</button>
+                 </div>
+            </div>
+         </div>
+         <div data-modal="modal2" class="card">
+             <div>
+                  <div>
+                      <div class="oil">
+                          <img class="bottle" src="/images/vecteezy_motor-oil-bottle-clipart-design-illustration_9381185.png" alt="">
+                      </div>
+                  </div>
+                  <div class="paragrph">
+                      <h4>name</h4>
+                      <p>Eng yaxshi moy - dvigatel himoyasi va kuchi!</p>
+                      <button>Qo‘shimcha Ma’lumot</button>
+                  </div>
+             </div>
+          </div>
+          <div data-modal="modal3" class="card">
+             <div>
+                  <div>
+                      <div class="oil">
+                          <img class="bottle" src="/images/vecteezy_motor-oil-bottle-clipart-design-illustration_9381185.png" alt="">
+                      </div>
+                  </div>
+                  <div class="paragrph">
+                      <h4>name</h4>
+                      <p>Eng yaxshi moy - dvigatel himoyasi va kuchi!</p>
+                      <button><a href="#">Qo‘shimcha Ma’lumot</a></button>
+                  </div>
+             </div>
+          </div>
+          <div data-modal="modal4" class="card">
+             <div>
+                  <div>
+                      <div class="oil">
+                          <img class="bottle" src="/images/vecteezy_motor-oil-bottle-clipart-design-illustration_9381185.png" alt="">
+                      </div>
+                  </div>
+                  <div class="paragrph">
+                      <h4>name</h4>
+                      <p>Eng yaxshi moy - dvigatel himoyasi va kuchi!</p>
+                      <button><a href="#">Qo‘shimcha Ma’lumot</a></button>
+                  </div>
+             </div>
+          </div>
+          <div data-modal="modal5" class="card">
+            <div>
+                 <div>
+                     <div class="oil">
+                         <img class="bottle" src="/images/vecteezy_motor-oil-bottle-clipart-design-illustration_9381185.png" alt="">
+                     </div>
+                 </div>
+                 <div class="paragrph">
+                     <h4>name</h4>
+                     <p>Eng yaxshi moy - dvigatel himoyasi va kuchi!</p>
+                     <button><a href="#">Qo‘shimcha Ma’lumot</a></button>
+                 </div>
+            </div>
+         </div>
+         <div data-modal="modal6" class="card">
+             <div>
+                  <div>
+                      <div class="oil">
+                          <img class="bottle" src="/images/vecteezy_motor-oil-bottle-clipart-design-illustration_9381185.png" alt="">
+                      </div>
+                  </div>
+                  <div class="paragrph">
+                      <h4>name</h4>
+                      <p>Eng yaxshi moy - dvigatel himoyasi va kuchi!</p>
+                      <button><a href="#">Qo‘shimcha Ma’lumot</a></button>
+                  </div>
+             </div>
+          </div>
+          <div data-modal="modal7" class="card">
+             <div>
+                  <div>
+                      <div class="oil">
+                          <img class="bottle" src="/images/vecteezy_motor-oil-bottle-clipart-design-illustration_9381185.png" alt="">
+                      </div>
+                  </div>
+                  <div class="paragrph">
+                      <h4>name</h4>
+                      <p>Eng yaxshi moy - dvigatel himoyasi va kuchi!</p>
+                      <button><a href="#">Qo‘shimcha Ma’lumot</a></button>
+                  </div>
+             </div>
+          </div>
+          <div data-modal="modal8" class="card">
+             <div>
+                  <div>
+                      <div class="oil">
+                          <img class="bottle" src="/images/vecteezy_motor-oil-bottle-clipart-design-illustration_9381185.png" alt="">
+                      </div>
+                  </div>
+                  <div class="paragrph">
+                      <h4>name</h4>
+                      <p>Eng yaxshi moy - dvigatel himoyasi va kuchi!</p>
+                      <button><a href="#">Qo‘shimcha Ma’lumot</a></button>
+                  </div>
+             </div>
+          </div>
+          <div data-modal="modal9" class="card">
+            <div>
+                 <div>
+                     <div class="oil">
+                         <img class="bottle" src="/images/vecteezy_motor-oil-bottle-clipart-design-illustration_9381185.png" alt="">
+                     </div>
+                 </div>
+                 <div class="paragrph">
+                     <h4>name</h4>
+                     <p>Eng yaxshi moy - dvigatel himoyasi va kuchi!</p>
+                     <button><a href="#">Qo‘shimcha Ma’lumot</a></button>
+                 </div>
+            </div>
+         </div>
+         <div data-modal="modal10" class="card">
+             <div>
+                  <div>
+                      <div class="oil">
+                          <img class="bottle" src="/images/vecteezy_motor-oil-bottle-clipart-design-illustration_9381185.png" alt="">
+                      </div>
+                  </div>
+                  <div class="paragrph">
+                      <h4>name</h4>
+                      <p>Eng yaxshi moy - dvigatel himoyasi va kuchi!</p>
+                      <button><a href="#">Qo‘shimcha Ma’lumot</a></button>
+                  </div>
+             </div>
+          </div>
+          <div data-modal="modal11" class="card">
+             <div>
+                  <div>
+                      <div class="oil">
+                          <img class="bottle" src="/images/vecteezy_motor-oil-bottle-clipart-design-illustration_9381185.png" alt="">
+                      </div>
+                  </div>
+                  <div class="paragrph">
+                      <h4>name</h4>
+                      <p>Eng yaxshi moy - dvigatel himoyasi va kuchi!</p>
+                      <button><a href="#">Qo‘shimcha Ma’lumot</a></button>
+                  </div>
+             </div>
+          </div>
+          <div data-modal="modal12" class="card">
+             <div>
+                  <div>
+                      <div class="oil">
+                          <img class="bottle" src="/images/vecteezy_motor-oil-bottle-clipart-design-illustration_9381185.png" alt="">
+                      </div>
+                  </div>
+                  <div class="paragrph">
+                      <h4>name</h4>
+                      <p>Eng yaxshi moy - dvigatel himoyasi va kuchi!</p>
+                      <button><a href="#">Qo‘shimcha Ma’lumot</a></button>
+                  </div>
+             </div>
+          </div>
+                 </div>
+    
+                 <!-- Oldinga va orqaga o'tish tugmalari -->
+                <button class="prev" onclick="moveSlides(-1)">&#10094;</button>
+                <button class="next" onclick="moveSlides(1)">&#10095;</button>
+                </div>
+
+            </div>
+            <div data-aos="zoom-in">
+                        <button  class="show"><a href="">To‘liq Ko‘rsatish</a></button>
+            </div>
+        </section>
+
+        <section id="position" class="position">
+            <h1>Bizning joylashuvimiz</h1>
+           <div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2995.171827574212!2d69.1642357115175!3d41.34861879827951!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8eec9908fdc9%3A0xe0ed4896b5798b9!2z0KTQsNGA0LDQsdC4IDUzNiDQpNCw0YDQsNCx0LggNTM2LCBUYXNoa2VudCwgVGFzaGtlbnQgUmVnaW9uLCBVemJla2lzdGFu!5e0!3m2!1sen!2s!4v1726921761171!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <video class="background-video" autoplay muted loop>
+                    <source src="video/05431481595F4910D5EA67C53E766EB8_video_dashinit.mp4" type="video/mp4">
+                    <source src="video/An9H_jGXxVLTpANNosglySfmSvWJaNl7ujZNMoBAfdGH8z54FHWp_C_2rzbJscz.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <h2>biz bilan ulanish uchun</h2>
+            <form id="messageForm">
+                <div>
+                  <div>
+                    <label for="name">Ism:</label>  
+                  </div>
+                    <input type="text" id="nam" required>
+                </div>
+               <div>
+                    <div>
+                    <label for="phone">Telefon raqami:</label>
+                    </div>
+                    <input type="tel" id="phone" value="+998" placeholder="Misol: +998 90 123 45 67" required oninput="this.value = this.value.replace(/[^0-9+]/g, '');">
+               </div>
+                <div>
+                    <div>
+                    <label for="message">Habar:</label>
+                    </div>
+                    <input type="text" id="message" required>
+                </div>
+                <button class="yuborish" type="submit">Yuborish</button>
+            </form>
+            <div id="errorMessage"></div>
+            <div class="footer">
+
+                <ul>
+                    <h3><samp><img class="whatsapp" src="/images/apple-phone.png" alt=""></samp>tel:</h3>
+                    <li>+998-77-777-77-77</li>
+                    <li>+998-77-777-77-77</li>
+                    <li>+998-77-777-77-77</li>
+                </ul>
+                <ul class="sites">
+                    <h3><span><img class="web" src="/images/images-removebg-preview.png" alt=""></span>intrnet sahifalarimiz</h3>
+                    <li>
+                        <span><img src="/images/instagram.png" alt=""></span>
+                        <a target="_blank" href="https://www.instagram.com/">Instagram</a>
+                    </li>
+                    <li>
+                        <span><img src="images/facebook.png" alt=""></span>
+                        <a target="_blank" href="https://facebook.com/?lang=en">Facebook</a>
+                    </li>
+                    <li>
+                        <span><img src="/images/email.png" alt=""></span>
+                        <a target="_blank" href="https://mail.google.com/mail/u/0/#inbox">Email</a>
+                    </li>
+                </ul>
+                <ul>
+                    <h3><span><img class="telegram" src="images/telegram.png" alt=""></span>telegram</h3>
+                    <li><a href="https://t.me/mirzohamdam" target="_blank">https://t.me/mirzohamdam</a></li>
+                    <li><a href="https://t.me/mirzohamdam" target="_blank">https://t.me/mirzohamdam</a></li>
+                    <li><a href="https://t.me/mirzohamdam" target="_blank">https://t.me/mirzohamdam</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </footer>
+<!-- Modal 1 -->
+<div class="modal" id="modal1">
+    <div class="modal-content">
+        <span class="close" data-close="modal1">&times;</span>
+        <img src="/images/9952_462e-removebg-preview.png" alt="">
+        <div class="modal-mini">
+            <h2>Liqui Moly</h2>
+            <h2>Molygen New Generation 5W-30 5l</h2>
+            <h3>Qisqacha tavsif</h3>
+            <p>Motor moyi HC-sintetik texnologiyaga asoslangan bo'lib, Molygen brendining antifriksion qo'shimchalari paketi bilan ta'minlangan, bu esa eng yangi Molecular Friction Control texnologiyasiga asoslangan.</p>
+            <ul>
+                <li>Viskozite: 5W-30</li>
+                <li>Tarkibi: sintetik</li>
+                <li>API spetsifikatsiyalari: SP</li>
+                <li>ILSAC spetsifikatsiyalari: GF-6A</li>
+                <li>Hajmi: 5 litr</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<!-- Modal 2 -->
+<div class="modal" id="modal2">
+    <div class="modal-content">
+        <span class="close" data-close="modal2">&times;</span>
+        <h2>Modal 2</h2>
+        <p>This is the second modal content.</p>
+    </div>
+</div>
+
+<!-- Modal 3 -->
+<div class="modal" id="modal3">
+    <div class="modal-content">
+        <span class="close" data-close="modal3">&times;</span>
+        <h2>Modal 3</h2>
+        <p>This is the third modal content.</p>
+    </div>
+</div>
+<!-- Modal 4 -->
+<div class="modal" id="modal4">
+    <div class="modal-content">
+        <span class="close" data-close="modal3">&times;</span>
+        <h2>Modal 3</h2>
+        <p>This is the third modal content.</p>
+    </div>
+</div>
+<!-- Modal 5 -->
+<div class="modal" id="modal5">
+    <div class="modal-content">
+        <span class="close" data-close="modal3">&times;</span>
+        <h2>Modal 3</h2>
+        <p>This is the third modal content.</p>
+    </div>
+</div>
+<!-- Modal 6 -->
+<div class="modal" id="modal6">
+    <div class="modal-content">
+        <span class="close" data-close="modal3">&times;</span>
+        <h2>Modal 3</h2>
+        <p>This is the third modal content.</p>
+    </div>
+</div>
+<!-- Modal 7 -->
+<div class="modal" id="modal7">
+    <div class="modal-content">
+        <span class="close" data-close="modal3">&times;</span>
+        <h2>Modal 3</h2>
+        <p>This is the third modal content.</p>
+    </div>
+</div>
+<!-- Modal 8 -->
+<div class="modal" id="modal8">
+    <div class="modal-content">
+        <span class="close" data-close="modal3">&times;</span>
+        <h2>Modal 3</h2>
+        <p>This is the third modal content.</p>
+    </div>
+</div>
+<!-- Modal 9 -->
+<div class="modal" id="modal9">
+    <div class="modal-content">
+        <span class="close" data-close="modal3">&times;</span>
+        <h2>Modal 3</h2>
+        <p>This is the third modal content.</p>
+    </div>
+</div>
+<!-- Modal 10 -->
+<div class="modal" id="modal10">
+    <div class="modal-content">
+        <span class="close" data-close="modal3">&times;</span>
+        <h2>Modal 3</h2>
+        <p>This is the third modal content.</p>
+    </div>
+</div>
+<!-- Modal 11 -->
+<div class="modal" id="modal11">
+    <div class="modal-content">
+        <span class="close" data-close="modal3">&times;</span>
+        <h2>Modal 3</h2>
+        <p>This is the third modal content.</p>
+    </div>
+</div>
+<!-- Modal 12 -->
+<div class="modal" id="modal12">
+    <div class="modal-content">
+        <span class="close" data-close="modal3">&times;</span>
+        <h2>Modal 3</h2>
+        <p>This is the third modal content.</p>
+    </div>
+</div>
+     <!-- Izohlar ro'yxati -->
+    <!-- Popup Oynasi -->
+    <div class="popup" id="search-popup">
+        <div class="popup-content">
+            <span class="close" id="close-popup">&times;</span>
+            <h2>Qidiruv</h2>
+            <div class="search-container">
+                <input type="text" placeholder="maxsulot nomini kiriting..." id="popup-search-input">
+                <button type="button" id="popup-search-button">Qidir</button>
+            </div>
+            <div id="search-results"></div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="/js/telegram.js"></script>
+    <script>
+        AOS.init();
+      </script>
+    <script src="/js/index.js"></script>
+    <!-- Modal oynasi -->
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <h3>Qidiruv Natijalari:</h3>
+        <div id="modalResults"></div>
+        <button onclick="closeModal()">Yopish</button>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+/* Mobil qurilmalar uchun responsiv dizayn */
+@media (max-width: 1285px) {
+    .bonuses{
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .popup-content {
+        width: 90%;
+        padding: 15px 20px;
+    }
+
+    #popup-search-input {
+        width: 100%;
+    }
+
+    .search-container {
+        flex-direction: column;
+    }
+
+    #popup-search-input, #popup-search-button {
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    #popup-search-button {
+        margin-top: 10px;
+        border-radius: 5px;
+    }
+}
+/* Media Queries for different breakpoints */
+
+/* 1440px and above */
+@media (min-width: 1440px) {
+    /* Add your CSS rules for large screens */
+}
+
+/* 1200px to 1439px */
+@media (max-width: 1439px) and (min-width: 1200px) {
+    /* Add your CSS rules for medium-large screens */
+}
+
+/* 992px to 1199px */
+@media (max-width: 1199px) and (min-width: 992px) {
+    /* Add your CSS rules for medium screens */
+}
+
+/* 768px to 991px */
+@media (max-width: 991px) and (min-width: 768px) {
+    /* Add your CSS rules for small-medium screens */
+}
+
+/* 576px to 767px */
+@media (max-width: 767px) and (min-width: 576px) {
+    /* Add your CSS rules for small screens */
+}
+
+/* 375px to 575px */
+@media (max-width: 575px) and (min-width: 375px) {
+    /* Add your CSS rules for very small screens */
+}
+
+/* 312px to 374px */
+@media (max-width: 374px) and (min-width: 312px) {
+    /* Add your CSS rules for extra small screens */
+}
